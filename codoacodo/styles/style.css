@@ -1,0 +1,285 @@
+*{
+ background-color: rgba(255, 255, 255, 0);
+ font-family: 'Castoro Titling', cursive;  
+margin: 1;
+padding: 1;
+}
+
+header{
+    background-color: rgba(76, 224, 167, 0.745);
+    padding: 0,5rem 1rem;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10px;
+    z-index: 9999;
+
+}
+header nav{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem .2rem;
+    justify-content: center;
+}
+
+header nav{
+    display: inline-flex;
+}
+
+header a{
+    text-decoration: none;
+    padding: 10px;
+    width: 50px;
+}
+header a:hover{
+    color: #1cffa48f;
+    font-weight: bold;
+    
+}
+ 
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+h1{
+    text-align: center;
+    color: beige;
+    padding: 20px;
+}
+main section{
+    padding: 2rem;
+}
+
+#banner_section{
+    padding: 0;
+}
+
+#inicio {
+    background-color: #f2f2f2;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  #inicio h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #inicio p {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  #inicio .btn {
+    background-color: #5acea1;
+    color: #fff;
+    padding: 6px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  #inicio .btn:hover {
+    background-color: #cc4400;
+  }
+  
+  #servicios {
+    padding: 2rem;
+    text-align: center; 
+  }
+  
+  #servicios h2 {
+    font-size: 1,5rem; 
+  }
+  
+  #articles_servicios {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  #articles_servicios article {
+    position: relative;
+    width: 18rem;
+    height: 20rem;
+    overflow: hidden;
+    border: 0,5px solid #000;
+    margin: 5px;
+    
+  }
+  
+  #articles_servicios article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  #articles_servicios article h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(180, 238, 226, 0.408);
+    color: #050202;
+    padding: 1rem;
+    border-radius: 100px;
+    text-align: center;
+  }
+  
+  #productos {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  #articles_productos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  #articles_productos section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  #articles_productos article {
+    position: relative;
+    width: 18rem;
+    height: 25rem;
+    overflow: hidden;
+    border: 0,5px solid #000;
+    margin: 5px;
+  }
+  
+  #articles_productos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  #articles_productos h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  #articles_productos p {
+    font-size: 0.9rem;
+  }
+
+
+#nosotros{
+    padding: 2rem;
+    text-align: center;
+}  
+
+.staff-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  
+  .staff-list li {
+    flex-basis: 25%;
+    text-align: center;
+  }
+  
+  .staff-list img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .staff-list h3 {
+    margin: 0;
+  }
+  
+  .staff-list p {
+    font-size: 14px;
+    color: #888;
+  }
+  
+
+
+  footer {
+    padding: 0.5rem;
+    margin-top: 0,5rem;
+    background-color: rgba(224, 255, 255, 0.84);
+    min-width: 1px;
+    min-height: 2rem;
+    text-align: center;
+    font-size: 0,8rem;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  footer section {
+    margin: 1rem;
+   display: flexbox;
+  }
+  
+  footer h2 {
+    margin: 1rem 0;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  footer a:hover {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  #footer_info {
+    min-height: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+
+#copyright_section{
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 427px) {
+   header ul{
+    column-gap: 1.5rem;
+   }
+}
+
+@media screen and (min-width: 551px) {
+    #footer_info{
+     justify-content: space-evenly;
+    }
+}

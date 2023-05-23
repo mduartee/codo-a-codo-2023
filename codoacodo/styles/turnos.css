@@ -1,0 +1,66 @@
+
+body {
+  background: url(../img/fondo\ turnos.jpg) no-repeat fixed center;
+  background-size: cover;
+}
+
+main {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgba(76, 224, 167, 0.745);
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  color: rgba(76, 224, 167, 0.745);
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(76, 224, 167, 0.745);
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(76, 224, 167, 0.745);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: rgba(76, 224, 167, 0.9);
+}
+
+footer {
+  text-align: center;
+  color: rgba(76, 224, 167, 0.745);
+  font-size: 14px;
+}
+
+
+@media (max-width: 600px) {
+  main {
+    max-width: 100%;
+    padding: 20px;
+  }
+}

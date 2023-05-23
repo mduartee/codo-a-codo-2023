@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Spa</title>
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <link rel="shortcut icon" href="./img/favicon house spa.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/eeeb40ebbf.js" crossorigin="anonymous"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+
+</head>
+<body>
+    <header>
+        <h1>HOUSE SPA</h1>
+      
+        <nav>
+          <ul>
+            <li>
+              <a href="#inicio">Inicio</a>
+              <a href="#servicios">Servicios</a>
+              <a href="#productos">Productos</a>
+              <a href="#nosotros">Sobre nosotros</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      
+      
+      
+      <section id="inicio">
+           <div class="hero">
+              <h2>Bienvenido a House Spa</h2>
+              <p>Disfruta de nuestros servicios de spa y relajación.</p>
+              <a href="turnos.html" class="btn">Solicita tu turno</a>
+            </div>
+          
+      </section>
+      
+      <section id="servicios">
+        
+        <h2>Servicios</h2>
+            <section>
+                <section id="articles_servicios">
+                    
+                        <article>
+                            <h3>Masajes</h3>
+                            <img src="./img/imagen masajes img.jpg" alt="masajes img">
+                        </article>
+                        <article>
+                            <h3>Piedras Calientes</h3>
+                            <img src="./img/piedras calientes img.jpg" alt="piedras calientes img">
+                        </article>
+                        <article>
+                            <h3>Tratamientos Corporales</h3>
+                            <img src="./img/tratamientos corporales img.jpg" alt="tratamientos corporales img">
+                        </article>
+                        <article>
+                            <h3>Tratamientos Faciales</h3>
+                            <img src="./img/tratamientos faciales img.jpg" alt="tratamientos faciales img">
+                        </article>
+                    
+                </section>
+            </section>
+      </section>
+      
+      <section id="productos">
+       
+        <h2>Productos</h2>
+        <section id="articles_productos">
+            <section>
+                <article>
+                    <h3>Cremas</h3>
+                    <p>Las cremas mas naturales e hidratantes las encontras aca</p>
+                    <img src="./img/cremas corporales.jpg" alt="cremas corporales">
+                </article>
+                <article>
+                    <h3>Aceites</h3>
+                    <p>Contamos con los mejores aceites esenciales</p>
+                    <img src="./img/aceites corporales.jpg" alt="aceites corporales">
+                </article>
+                <article>
+                    <h3>Velas</h3>
+                    <p>No podes dejar de probar nuestras velas de soja</p>
+                    <img src="./img/velas corporales.jpg" alt="velas corporales">
+                </article>
+            </section>
+        </section>
+
+      </section>
+      
+      <section id="nosotros">
+        <section id="contenido_nosotros">
+          <h2>Sobre nosotros</h2>
+          <p>House Spa es un lugar dedicado a brindar experiencias de relajación y bienestar desde hace más de 10 años. Nuestro objetivo es ofrecer un ambiente tranquilo y acogedor donde nuestros clientes puedan desconectar del estrés diario y rejuvenecer su mente y cuerpo.</p>
+          <ul class="staff-list">
+            <li>
+              <img src="./img/lashista.jpg" alt="lashista">
+              <h3>Rosario Perez</h3>
+              <p>Lashista especialista en extenciones de pestañas</p>
+            </li>
+            <li>
+              <img src="./img/masajista.jpg" alt="masajista">
+              <h3>Mariana Rojas</h3>
+              <p>Masajista desde hace mas de 10 años</p>
+            </li>
+            <li>
+                <img src="./img/cosmeatra.jpg" alt="cosmeatra">
+                <h3>Jorge diaz</h3>
+                <p>Excelente profesional que forma parte de nuestro centro desde hace 5 años</p>
+              </li>
+          </ul>
+        </section>
+
+        <section id="ubicacion">
+            <p>Ubicación de nuestras sedes</p>
+            <div id="map"></div>
+            
+        </section>
+    
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+        <script>
+            function iniciarMap() {
+                var coord = { lat: -37.5956145, lng: -35.4431949 };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                
+                    zoom: 10,
+                    center: coord
+                });
+                var marker = new google.maps.Marker({
+                    position: coord,
+                    map: map
+                });
+            }
+           
+        </script>
+    
+    
+      </section>
+      
+      
+   
+   
+    <footer>
+        <section id="footer_info">
+            <section>
+                <h2>Redes sociales</h2>
+                <a href="https://www.instagram.com/spahouse_20/"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://es-la.facebook.com/people/House-SPA/100064606243316/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://youtu.be/p7tS77quSZI"><i class="fa-brands fa-youtube"></i></a>
+          
+            </section>    
+             
+        </section>
+           
+          <section id="copyright_section">
+            <p>&copy; copyright 2023 House Spa</p>
+          </section>
+    </footer>
+    
+</body>
+</html>
